@@ -1,0 +1,479 @@
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', 'dotum', '돋움';
+    margin: 0;
+    padding: 0;
+    color: #666;
+    padding-top: 60px; /* 헤더 높이에 맞춰 조정 */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    height: 20px;
+    background: url('../images/top_logo_fixed.png') no-repeat;
+    text-indent: -9999px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header nav ul li a:focus,
+header nav ul li a:active {
+    color: #ff004d; /* 강조 색상 */
+}
+
+header .btn-company {
+    background: #ff004d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+#intro h1 {
+    font-size: 36px;
+    color: #9966CC;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#intro img {
+    width: 100px;
+    height: auto;
+}
+
+/* 사업분야 스타일 */
+#business {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+#business .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#business h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.business-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.business-item {
+    flex: 1 1 calc(45% - 20px); /* 한 줄에 두 개씩 */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.business-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.business-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.business-item:hover {
+    background: #f0f0ff;
+    transition: background 0.3s ease;
+}
+
+#services {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+#services .container {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.service-box {
+    flex: 1 1 calc(45% - 20px); /* 한 줄에 두 개씩 */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.service-box.purple {
+    background: #f0f0ff;
+}
+
+.service-box.pink {
+    background: #fff0f0;
+}
+
+.service-box h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+.service-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-icons div {
+    flex: 1 1 calc(50% - 10px); /* 한 줄에 두 개씩 */
+    text-align: center;
+    margin: 5px;
+}
+
+.service-icons img {
+    width: 50px;
+    height: auto;
+}
+
+.service-icons span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#products {
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+#products .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#products p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-list,
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    flex: 1 1 calc(25% - 20px); /* 한 줄에 4개씩 */
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+#story {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+#story .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#story h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.story-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.story-item {
+    flex: 1 1 calc(25% - 20px); /* 한 줄에 4개씩 */
+    margin: 10px;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.story-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.story-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+#contact {
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+#contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 여러 줄에 걸쳐 나올 수 있도록 설정 */
+    margin-bottom: 20px;
+}
+
+.contact-list a {
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    margin: 10px; /* 세로 및 가로 간격 설정 */
+    border-radius: 5px;
+    text-decoration: none;
+    flex: 1 1 calc(33.333% - 20px); /* 한 줄에 세 개씩 나올 수 있도록 설정 */
+    box-sizing: border-box;
+}
+
+.address,
+.contact-info {
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: row; /* 메뉴를 한 줄로 표시 */
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    #services .container,
+    #products .container,
+    #story .container,
+    #contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box,
+    .product-item,
+    .story-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-icons {
+        flex-direction: column;
+    }
+
+    .service-icons div {
+        margin-bottom: 10px;
+    }
+
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-list a {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro h1 {
+        font-size: 24px;
+    }
+
+    #intro p {
+        font-size: 14px;
+    }
+
+    #services .container,
+    #products .container,
+    #story .container,
+    #contact .container {
+        padding: 20px;
+    }
+
+    .service-box {
+        padding: 10px;
+    }
+
+    .product-item,
+    .story-item {
+        padding: 10px;
+    }
+
+    .product-item,
+    .story-item {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-list a {
+        width: 100%; /* 전체 너비를 차지하도록 설정 */
+        margin: 5px 0; /* 세로 간격 조정 */
+    }
+}
+
+/* 화면 넓이가 360px 이하인 경우 추가 */
+@media (max-width: 360px) {
+    .story-item {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+}
