@@ -311,10 +311,68 @@ header .btn-company {
 }
 
 footer {
-    padding: 20px;
+    padding: 30px 20px;
     background: #333;
     color: #fff;
     text-align: center;
+}
+
+/* === 2026-06-26 개편: 솔루션·서비스·SI 3대 사업축 재포지셔닝 === */
+header .logo { text-indent: -9999px; overflow: hidden; }
+.nav-axdev { color: #ff004d !important; }
+
+/* 공통 섹션 헤더 */
+.section-head { max-width: 1200px; margin: 0 auto 30px; text-align: center; }
+.section-head h2 { font-size: 34px; color: #333; margin-bottom: 8px; }
+.section-head .lead { font-size: 18px; color: #888; }
+
+/* 3분할 카드(사업축·서비스) */
+.svc3 .service-box { flex: 1 1 calc(33.333% - 20px); }
+.service-box .badge { display: inline-block; font-size: 13px; font-weight: bold; color: #ff004d; margin-bottom: 6px; }
+.service-box ul { margin: 12px 0 0; padding-left: 18px; }
+.service-box ul li { font-size: 14px; color: #555; margin-bottom: 4px; }
+
+/* About 사업축 */
+#about { padding: 60px 20px; background: #fafafa; }
+#about .container { max-width: 1200px; margin: 0 auto; }
+
+/* 솔루션 제품 — 카테고리 블록 */
+#solutions { padding: 60px 20px; background: #fff; }
+#solutions .container { max-width: 1200px; margin: 0 auto; }
+.cat-block { margin-bottom: 28px; }
+.cat-block h3 { font-size: 18px; color: #ff004d; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 14px; }
+.chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip-list .chip { background: #f3f3f7; border-radius: 20px; padding: 8px 16px; font-size: 14px; color: #444; }
+.chip-list .chip b { color: #222; }
+
+/* 서비스(구독형 AICC) */
+#services { padding: 60px 20px; background: #fafafa; }
+#services .container { max-width: 1200px; margin: 0 auto; }
+
+/* AXDevHub 강조 밴드(자체 서비스) */
+#axdevhub { padding: 64px 20px; background: linear-gradient(135deg, #ff004d 0%, #9966CC 100%); color: #fff; text-align: center; }
+#axdevhub .container { max-width: 900px; margin: 0 auto; }
+#axdevhub .eyebrow { font-size: 13px; letter-spacing: 2px; opacity: .9; }
+#axdevhub h2 { font-size: 34px; margin: 10px 0; color: #fff; }
+#axdevhub p { font-size: 17px; line-height: 1.75; opacity: .96; }
+#axdevhub .feat { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 18px 0 26px; }
+#axdevhub .feat span { background: rgba(255, 255, 255, .18); border-radius: 20px; padding: 8px 16px; font-size: 14px; }
+#axdevhub .cta { display: inline-block; background: #fff; color: #ff004d; font-weight: bold; padding: 14px 34px; border-radius: 6px; text-decoration: none; font-size: 16px; }
+
+/* 신뢰지표 */
+#trust { padding: 50px 20px; background: #2b2b35; color: #fff; }
+.trust-list { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; text-align: center; }
+.trust-item .num { font-size: 32px; font-weight: 800; color: #ff5b7f; }
+.trust-item .label { font-size: 14px; color: #cfcfd6; margin-top: 6px; }
+
+/* 푸터 보강 */
+footer .footer-links { margin-bottom: 14px; }
+footer .footer-links a { display: inline-block; color: #fff; background: #ff004d; padding: 10px 22px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+footer .footer-corp { font-size: 13px; color: #bbb; line-height: 1.7; margin: 6px 0 12px; }
+
+@media (max-width: 768px) {
+    .svc3 .service-box { flex: 1 1 100%; }
+    .trust-item { flex: 1 1 40%; }
 }
 
 /* 미디어 쿼리 추가 */
