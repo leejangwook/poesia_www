@@ -13,6 +13,9 @@
 	<header>
         <div class="container">
             <a href="#intro" class="logo">포에시아</a>
+            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="#about">사업영역</a></li>
@@ -20,8 +23,7 @@
                     <li><a href="#axdevhub">서비스</a></li>
                     <li><a href="#solutions">AI 역량</a></li>
                     <li><a href="#contact">문의</a></li>
-                    <!-- TODO: AXDEVHUB 운영 도메인 확정 후 href 교체 -->
-                    <li><a href="https://www.axdevhub.com" target="_blank" rel="noopener" class="nav-axdev">AXDEVHUB ↗</a></li>
+                    <li><a href="https://axdevhub.com" data-axdev target="_blank" rel="noopener" class="nav-axdev">AXDEVHUB ↗</a></li>
                 </ul>
             </nav>
         </div>
@@ -121,8 +123,7 @@
                 <span>인재풀</span>
                 <span>개발자 커뮤니티</span>
             </div>
-            <!-- TODO: AXDEVHUB 운영 도메인 확정 후 href 교체 -->
-            <a class="cta" href="https://www.axdevhub.com" target="_blank" rel="noopener">AXDevHub 바로가기 ↗</a>
+            <a class="cta" href="https://axdevhub.com" data-axdev target="_blank" rel="noopener">AXDevHub 바로가기 ↗</a>
         </div>
     </section>
 
@@ -260,8 +261,7 @@
     <footer>
         <div class="container">
             <div class="footer-links">
-                <!-- TODO: AXDEVHUB 운영 도메인 확정 후 href 교체 -->
-                <a href="https://www.axdevhub.com" target="_blank" rel="noopener">포에시아가 운영하는 AXDevHub 바로가기 ↗</a>
+                <a href="https://axdevhub.com" data-axdev target="_blank" rel="noopener">포에시아가 운영하는 AXDevHub 바로가기 ↗</a>
             </div>
             <p class="footer-corp">
                 주식회사 포에시아 · 대표 조연우 · 사업자등록번호 475-87-02542<br>
@@ -270,5 +270,32 @@
             <p>© 포에시아 Corp. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- AXDEVHUB 링크 환경 자동 인식: localhost↔localhost:3000 · t.smilewithpoesia↔t.axdevhub · 운영↔axdevhub.com -->
+    <script>
+      (function () {
+        var h = location.hostname;
+        var url =
+          (h === 'localhost' || h === '127.0.0.1') ? 'http://localhost:3000'
+          : (h === 't.smilewithpoesia.com' || h === 't.smilewithpoesia.co.kr') ? 'https://t.axdevhub.com'
+          : 'https://axdevhub.com';
+        document.querySelectorAll('a[data-axdev]').forEach(function (a) { a.href = url; });
+
+        // 모바일 햄버거 토글
+        var hdr = document.querySelector('header');
+        var btn = document.querySelector('.nav-toggle');
+        if (hdr && btn) {
+          var setOpen = function (open) {
+            hdr.classList.toggle('nav-open', open);
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+          };
+          btn.addEventListener('click', function () { setOpen(!hdr.classList.contains('nav-open')); });
+          hdr.querySelectorAll('nav a').forEach(function (a) {
+            a.addEventListener('click', function () { setOpen(false); });
+          });
+        }
+      })();
+    </script>
 </body>
 </html>
