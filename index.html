@@ -13,25 +13,27 @@
 	<header>
         <div class="container">
             <a href="#intro" class="logo">포에시아</a>
-            <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <div class="header-actions">
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Language">EN</button>
+                <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#about">사업영역</a></li>
-                    <li><a href="#story">구축사례</a></li>
-                    <li><a href="#axdevhub">서비스</a></li>
-                    <li><a href="#solutions">AI 역량</a></li>
-                    <li><a href="#contact">문의</a></li>
-                    <li><a href="https://axdevhub.com" data-axdev target="_blank" rel="noopener" class="nav-axdev">AXDEVHUB ↗</a></li>
+                    <li><a href="#about" data-i18n="nav.about">사업영역</a></li>
+                    <li><a href="#story" data-i18n="nav.story">구축사례</a></li>
+                    <li><a href="#axdevhub" data-i18n="nav.service">서비스</a></li>
+                    <li><a href="#solutions" data-i18n="nav.ai">AI 역량</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">문의</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section id="intro">
-        <h1>AI 기술로 일상을 혁신합니다</h1>
-        <p>검증된 수행 경험의 <b>SI 파트너</b>, 직접 만들고 운영하는 <b>서비스</b> — You First You Always</p>
+        <h1 data-i18n="intro.h1">AI 기술로 일상을 혁신합니다</h1>
+        <p data-i18n="intro.p">검증된 수행 경험의 <b>SI 파트너</b>, 직접 만들고 운영하는 <b>서비스</b> — You First You Always</p>
         <img src="images/wave.png" alt="Soundwave">
     </section>
 
@@ -39,38 +41,38 @@
     <section id="about">
         <div class="section-head">
             <h2>ABOUT POESIA</h2>
-            <p class="lead">실행하는 SI, 직접 운영하는 서비스, 이를 받치는 AI 역량 — 세 축으로 사업을 전개합니다.</p>
+            <p class="lead" data-i18n="about.lead">실행하는 SI, 직접 운영하는 서비스, 이를 받치는 AI 역량 — 세 축으로 사업을 전개합니다.</p>
         </div>
         <div class="container">
             <div class="service-list svc3">
                 <div class="service-box purple">
                     <span class="badge">01 SI · SM</span>
-                    <h2>SI · 시스템 구축</h2>
-                    <p>공공·금융·유통·제조 정보시스템의 구축·고도화·운영. 검증된 수행 경험으로 실질적인 디지털 전환을 실행합니다.</p>
+                    <h2 data-i18n="about.box1.h2">SI · 시스템 구축</h2>
+                    <p data-i18n="about.box1.p">공공·금융·유통·제조 정보시스템의 구축·고도화·운영. 검증된 수행 경험으로 실질적인 디지털 전환을 실행합니다.</p>
                     <ul>
-                        <li>시스템 통합(SI) · 유지운영(SM)</li>
-                        <li>AICC · 챗봇 · 데이터 융복합</li>
-                        <li>요구분석 → 설계 → 개발 → 운영</li>
+                        <li data-i18n="about.box1.li1">시스템 통합(SI) · 유지운영(SM)</li>
+                        <li data-i18n="about.box1.li2">AICC · 챗봇 · 데이터 융복합</li>
+                        <li data-i18n="about.box1.li3">요구분석 → 설계 → 개발 → 운영</li>
                     </ul>
                 </div>
                 <div class="service-box pink">
                     <span class="badge">02 SERVICE</span>
-                    <h2>자체 서비스</h2>
-                    <p>슬라이드가 아니라 실제로 만들고 운영합니다. 자체 B2C 서비스 <b>AXDevHub</b>로 운영 노하우와 성장 동력을 확보합니다.</p>
+                    <h2 data-i18n="about.box2.h2">자체 서비스</h2>
+                    <p data-i18n="about.box2.p">슬라이드가 아니라 실제로 만들고 운영합니다. 자체 B2C 서비스 <b>AXDevHub</b>로 운영 노하우와 성장 동력을 확보합니다.</p>
                     <ul>
-                        <li>AXDevHub — 개발 생태계 허브</li>
-                        <li>구독형 AI 서비스(AICC)</li>
-                        <li>직접 운영 기반 부가가치</li>
+                        <li data-i18n="about.box2.li1">AXDevHub — 개발 생태계 허브</li>
+                        <li data-i18n="about.box2.li2">구독형 AI 서비스(AICC)</li>
+                        <li data-i18n="about.box2.li3">직접 운영 기반 부가가치</li>
                     </ul>
                 </div>
                 <div class="service-box purple">
                     <span class="badge">03 SOLUTION</span>
-                    <h2>AI 역량 · 기술 자산</h2>
-                    <p>자체 모델 보유를 넘어, SI·서비스에 바로 결합하는 AI 역량을 갖췄습니다. 통합·운영·보안이 차별점입니다.</p>
+                    <h2 data-i18n="about.box3.h2">AI 역량 · 기술 자산</h2>
+                    <p data-i18n="about.box3.p">자체 모델 보유를 넘어, SI·서비스에 바로 결합하는 AI 역량을 갖췄습니다. 통합·운영·보안이 차별점입니다.</p>
                     <ul>
-                        <li>음성(STT·TTS) · 보안(Defence)</li>
-                        <li>생성형 챗봇·콜봇(RAG/LLM)</li>
-                        <li>AICC · 업무 자동화</li>
+                        <li data-i18n="about.box3.li1">음성(STT·TTS) · 보안(Defence)</li>
+                        <li data-i18n="about.box3.li2">생성형 챗봇·콜봇(RAG/LLM)</li>
+                        <li data-i18n="about.box3.li3">AICC · 업무 자동화</li>
                     </ul>
                 </div>
             </div>
@@ -80,31 +82,28 @@
     <!-- 2. 구축사례 (신뢰 자산 — 상단 배치) -->
     <section id="story">
         <div class="container common-list">
-            <h2>주요 구축사례</h2>
+            <h2 data-i18n="story.h2">주요 구축사례</h2>
             <div class="story-list">
                 <div class="story-item">
-                    <h3>뮤직 플랫폼 구축 및 운영</h3>
-                    <p>음악 서비스 플랫폼<br>(구축 및 운영)</p>
+                    <h3 data-i18n="story.1.h3">뮤직 플랫폼 구축 및 운영</h3>
+                    <p data-i18n="story.1.p">음악 서비스 플랫폼<br>(구축 및 운영)</p>
                 </div>
                 <div class="story-item">
-                    <h3>상담지원시스템 개발·운영</h3>
-                    <p>글로벌 BPO<br>(개발 및 운영 참여)</p>
+                    <h3 data-i18n="story.2.h3">상담지원시스템 개발·운영</h3>
+                    <p data-i18n="story.2.p">글로벌 BPO<br>(개발 및 운영 참여)</p>
                 </div>
                 <div class="story-item">
-                    <h3>AutoQA 개발</h3>
-                    <p>카드사<br>(상담 후처리 자동평가)</p>
+                    <h3 data-i18n="story.3.h3">AutoQA 개발</h3>
+                    <p data-i18n="story.3.p">카드사<br>(상담 후처리 자동평가)</p>
                 </div>
                 <div class="story-item">
-                    <h3>민원신고 챗봇 개발</h3>
-                    <p>공공기관<br>(개발 참여)</p>
+                    <h3 data-i18n="story.4.h3">민원신고 챗봇 개발</h3>
+                    <p data-i18n="story.4.p">공공기관<br>(개발 참여)</p>
                 </div>
+                <!-- 2026-07-06 삭제: 「혜택정보 제공 콜봇」(카드사 연구과제) 구축사례 제외 요청 -->
                 <div class="story-item">
-                    <h3>혜택정보 제공 콜봇</h3>
-                    <p>카드사 연구과제<br>(MRC·RAG 기반)</p>
-                </div>
-                <div class="story-item">
-                    <h3>위치기반 서비스 개발</h3>
-                    <p>세스코<br>(개발 참여)</p>
+                    <h3 data-i18n="story.5.h3">위치기반 서비스 개발</h3>
+                    <p data-i18n="story.5.p">세스코<br>(개발 참여)</p>
                 </div>
             </div>
         </div>
@@ -115,19 +114,20 @@
         <div class="container">
             <div class="eyebrow">OUR SERVICE</div>
             <h2>AXDevHub</h2>
-            <p>포에시아가 직접 만들고 운영하는 <b>SI·SW 개발 생태계 허브</b>입니다.<br>
+            <p data-i18n="axdev.p">포에시아가 직접 만들고 운영하는 <b>SI·SW 개발 생태계 허브</b>입니다.<br>
             사업·과제·인력·프로젝트·커뮤니티를 한곳에서 — 개발자와 기업을 잇습니다.</p>
             <div class="feat">
-                <span>사업·과제 인텔리전스</span>
-                <span>프로젝트 매칭</span>
-                <span>인재풀</span>
-                <span>개발자 커뮤니티</span>
+                <span data-i18n="axdev.feat1">사업·과제 인텔리전스</span>
+                <span data-i18n="axdev.feat2">프로젝트 매칭</span>
+                <span data-i18n="axdev.feat3">인재풀</span>
+                <span data-i18n="axdev.feat4">개발자 커뮤니티</span>
             </div>
-            <a class="cta" href="https://axdevhub.com" data-axdev target="_blank" rel="noopener">AXDevHub 바로가기 ↗</a>
+            <a class="cta" href="https://axdevhub.com" data-axdev target="_blank" rel="noopener" data-i18n="axdev.cta">AXDevHub 바로가기 ↗</a>
         </div>
     </section>
 
     <!-- 4. 구독형 AI 서비스 -->
+    <!-- 2026-07-06 주석 처리: 구독형 AI 서비스는 사업성 재검토 및 준비 필요. 준비 완료 후 아래 블록 주석 해제.
     <section id="services">
         <div class="section-head">
             <h2>구독형 AI 서비스</h2>
@@ -165,55 +165,56 @@
             </div>
         </div>
     </section>
+    -->
 
     <!-- 5. AI 역량 & 기술 자산 (핵심만 큐레이션) -->
     <section id="solutions">
         <div class="section-head">
-            <h2>AI 역량 &amp; 기술 자산</h2>
-            <p class="lead">SI·서비스에 바로 결합하는, 검증된 AI 기술 자산입니다.</p>
+            <h2 data-i18n="sol.title">AI 역량 &amp; 기술 자산</h2>
+            <p class="lead" data-i18n="sol.lead">SI·서비스에 바로 결합하는, 검증된 AI 기술 자산입니다.</p>
         </div>
         <div class="container common-list">
             <div class="product-list">
                 <div class="product-item">
                     <img src="images/product_stt.png" alt="음성인식">
-                    <h3>음성인식 (STT)</h3>
-                    <p>42,500시간 학습 기반 실시간 음성인식. 인식률 95% 이상, 도메인 맞춤학습</p>
+                    <h3 data-i18n="sol.stt.h3">음성인식 (STT)</h3>
+                    <p data-i18n="sol.stt.p">42,500시간 학습 기반 실시간 음성인식. 인식률 95% 이상, 도메인 맞춤학습</p>
                 </div>
                 <div class="product-item">
                     <img src="images/product_tts.png" alt="음성합성">
-                    <h3>음성합성 (TTS)</h3>
-                    <p>사람처럼 자연스러운 합성음(MOS 4.3+). 맞춤형 음성학습 지원</p>
+                    <h3 data-i18n="sol.tts.h3">음성합성 (TTS)</h3>
+                    <p data-i18n="sol.tts.p">사람처럼 자연스러운 합성음(MOS 4.3+). 맞춤형 음성학습 지원</p>
                 </div>
                 <div class="product-item">
                     <img src="images/product_infoguard.png" alt="민감정보·보안">
-                    <h3>민감정보·보안 (Defence)</h3>
-                    <p>민감정보 탐지·암복호화·마스킹. 운영 단계의 데이터 보안 차별화 역량</p>
+                    <h3 data-i18n="sol.def.h3">민감정보·보안 (Defence)</h3>
+                    <p data-i18n="sol.def.p">민감정보 탐지·암복호화·마스킹. 운영 단계의 데이터 보안 차별화 역량</p>
                 </div>
                 <div class="product-item">
                     <img src="images/product_chatbot.png" alt="생성형 챗봇">
-                    <h3>생성형 챗봇 (RAG/LLM)</h3>
-                    <p>시나리오 + Modular RAG 하이브리드. 내부정보 기반 정확한 생성형 답변</p>
+                    <h3 data-i18n="sol.chat.h3">생성형 챗봇 (RAG/LLM)</h3>
+                    <p data-i18n="sol.chat.p">시나리오 + Modular RAG 하이브리드. 내부정보 기반 정확한 생성형 답변</p>
                 </div>
                 <div class="product-item">
                     <img src="images/product_callbot.png" alt="콜봇">
-                    <h3>콜봇 (Callbot)</h3>
-                    <p>VoiceGateway·STT·TTS·RAG 기반 24시간 무중단 전문상담 콜봇</p>
+                    <h3 data-i18n="sol.call.h3">콜봇 (Callbot)</h3>
+                    <p data-i18n="sol.call.p">VoiceGateway·STT·TTS·RAG 기반 24시간 무중단 전문상담 콜봇</p>
                 </div>
                 <div class="product-item">
                     <img src="images/product_callbot.png" alt="AICC">
-                    <h3>AICC 통합</h3>
-                    <p>상담지원·감정분석·자동평가(AutoQA)를 통합한 채널 AI 콜센터</p>
+                    <h3 data-i18n="sol.aicc.h3">AICC 통합</h3>
+                    <p data-i18n="sol.aicc.p">상담지원·감정분석·자동평가(AutoQA)를 통합한 채널 AI 콜센터</p>
                 </div>
             </div>
             <!-- 보유 기술 자산(요약) -->
             <div class="cat-block" style="margin-top:28px;">
-                <h3>그 외 보유 기술</h3>
+                <h3 data-i18n="sol.more.h3">그 외 보유 기술</h3>
                 <div class="chip-list">
-                    <span class="chip"><b>신분증인식</b> 4종 95%+</span>
-                    <span class="chip"><b>녹취·화자분리</b></span>
-                    <span class="chip"><b>업무용 메신저</b></span>
-                    <span class="chip"><b>업무 자동화(RPA·HyperAutomation)</b></span>
-                    <span class="chip"><b>업무비서(AI Agent)</b></span>
+                    <span class="chip" data-i18n="sol.chip1"><b>신분증인식</b> 4종 95%+</span>
+                    <span class="chip" data-i18n="sol.chip2"><b>녹취·화자분리</b></span>
+                    <span class="chip" data-i18n="sol.chip3"><b>업무용 메신저</b></span>
+                    <span class="chip" data-i18n="sol.chip4"><b>업무 자동화(RPA·HyperAutomation)</b></span>
+                    <span class="chip" data-i18n="sol.chip5"><b>업무비서(AI Agent)</b></span>
                     <span class="chip"><b>MLOps · AutoML · DevOps</b></span>
                 </div>
             </div>
@@ -225,19 +226,19 @@
         <div class="trust-list">
             <div class="trust-item">
                 <div class="num">95%+</div>
-                <div class="label">음성인식(STT) 정확도<br>42,500시간 학습</div>
+                <div class="label" data-i18n="trust.1.label">음성인식(STT) 정확도<br>42,500시간 학습</div>
             </div>
             <div class="trust-item">
                 <div class="num">MOS 4.3</div>
-                <div class="label">음성합성(TTS)<br>자연성 품질</div>
+                <div class="label" data-i18n="trust.2.label">음성합성(TTS)<br>자연성 품질</div>
             </div>
             <div class="trust-item">
                 <div class="num">95%+</div>
-                <div class="label">신분증인식 4종<br>자체 OCR</div>
+                <div class="label" data-i18n="trust.3.label">신분증인식 4종<br>자체 OCR</div>
             </div>
             <div class="trust-item">
-                <div class="num">기업부설<br>연구소</div>
-                <div class="label">2024.08 설립<br>자체 R&amp;D 역량</div>
+                <div class="num" data-i18n="trust.4.num">기업부설<br>연구소</div>
+                <div class="label" data-i18n="trust.4.label">2024.08 설립<br>자체 R&amp;D 역량</div>
             </div>
         </div>
     </section>
@@ -246,24 +247,36 @@
     <section id="contact">
         <div class="container common-list">
             <h2>CONTACT</h2>
-            <p>포에시아와 함께 가치 있는 비즈니스를 만드세요.</p>
-            <div class="contact-list">
-                <a href="mailto:hello@smilewithpoesia.com">hello@smilewithpoesia.com</a>
-                <a href="mailto:help@smilewithpoesia.com">help@smilewithpoesia.com</a>
-                <a href="mailto:partnerships@smilewithpoesia.com">partnerships@smilewithpoesia.com</a>
-            </div>
+            <p data-i18n="contact.p">포에시아와 함께 가치 있는 비즈니스를 만드세요.</p>
+
+            <a class="contact-email" href="mailto:hello@smilewithpoesia.com">
+                <span class="ic" aria-hidden="true">✉</span>
+                <span>hello@smilewithpoesia.com</span>
+            </a>
+
             <!-- 주소: 2026-06-18 사업자등록증 기준(서울 송파 → 남양주 이전). TEL/FAX는 이전 후 변경 여부 확인 필요 -->
-            <p class="address">경기도 남양주시 화도읍 마석중앙로37번길 45, 504호-D152호(별나라프라자)</p>
-            <p class="contact-info">TEL: 02-3012-0302 | FAX: 0303-3443-0302</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <span class="ic" aria-hidden="true">📍</span>
+                    <div class="body">
+                        <div class="k" data-i18n="contact.k.addr">주소</div>
+                        <div class="v address" data-i18n="contact.address">경기도 남양주시 화도읍 마석중앙로37번길 45, 504호-D152호(별나라프라자)</div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <span class="ic" aria-hidden="true">☎</span>
+                    <div class="body">
+                        <div class="k" data-i18n="contact.k.tel">전화 · 팩스</div>
+                        <div class="v">TEL 02-3012-0302 · FAX 0303-3443-0302</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="https://axdevhub.com" data-axdev target="_blank" rel="noopener">포에시아가 운영하는 AXDevHub 바로가기 ↗</a>
-            </div>
-            <p class="footer-corp">
+            <p class="footer-corp" data-i18n="footer.corp">
                 주식회사 포에시아 · 대표 조연우 · 사업자등록번호 475-87-02542<br>
                 경기도 남양주시 화도읍 마석중앙로37번길 45, 504호-D152호(별나라프라자)
             </p>
@@ -271,9 +284,135 @@
         </div>
     </footer>
 
-    <!-- AXDEVHUB 링크 환경 자동 인식: localhost↔localhost:3000 · t.smilewithpoesia↔t.axdevhub · 운영↔axdevhub.com -->
+    <!-- 다국어(한/영) 사전 + AXDEVHUB 링크 환경 자동 인식 + 모바일 햄버거 -->
     <script>
       (function () {
+        // ── 다국어 사전(한/영) ─────────────────────────────
+        var I18N = {
+          'nav.about':      { ko: '사업영역', en: 'Business' },
+          'nav.story':      { ko: '구축사례', en: 'Portfolio' },
+          'nav.service':    { ko: '서비스', en: 'Service' },
+          'nav.ai':         { ko: 'AI 역량', en: 'AI Capabilities' },
+          'nav.contact':    { ko: '문의', en: 'Contact' },
+
+          'intro.h1':       { ko: 'AI 기술로 일상을 혁신합니다', en: 'Innovating Everyday Life with AI' },
+          'intro.p':        { ko: '검증된 수행 경험의 <b>SI 파트너</b>, 직접 만들고 운영하는 <b>서비스</b> — You First You Always',
+                              en: 'A proven <b>SI partner</b>, and a company that builds and runs its own <b>services</b> — You First You Always' },
+
+          'about.lead':     { ko: '실행하는 SI, 직접 운영하는 서비스, 이를 받치는 AI 역량 — 세 축으로 사업을 전개합니다.',
+                              en: 'Delivering SI, operating our own services, and the AI capabilities behind them — we build on three pillars.' },
+          'about.box1.h2':  { ko: 'SI · 시스템 구축', en: 'SI · System Integration' },
+          'about.box1.p':   { ko: '공공·금융·유통·제조 정보시스템의 구축·고도화·운영. 검증된 수행 경험으로 실질적인 디지털 전환을 실행합니다.',
+                              en: 'Building, advancing, and operating information systems across public, finance, retail, and manufacturing. We drive real digital transformation with proven delivery.' },
+          'about.box1.li1': { ko: '시스템 통합(SI) · 유지운영(SM)', en: 'System Integration (SI) · Maintenance (SM)' },
+          'about.box1.li2': { ko: 'AICC · 챗봇 · 데이터 융복합', en: 'AICC · Chatbot · Data Convergence' },
+          'about.box1.li3': { ko: '요구분석 → 설계 → 개발 → 운영', en: 'Analysis → Design → Development → Operation' },
+          'about.box2.h2':  { ko: '자체 서비스', en: 'Our Own Services' },
+          'about.box2.p':   { ko: '슬라이드가 아니라 실제로 만들고 운영합니다. 자체 B2C 서비스 <b>AXDevHub</b>로 운영 노하우와 성장 동력을 확보합니다.',
+                              en: 'Not slideware — we actually build and operate. Our own B2C service <b>AXDevHub</b> secures operational know-how and growth momentum.' },
+          'about.box2.li1': { ko: 'AXDevHub — 개발 생태계 허브', en: 'AXDevHub — Developer Ecosystem Hub' },
+          'about.box2.li2': { ko: '구독형 AI 서비스(AICC)', en: 'Subscription AI Services (AICC)' },
+          'about.box2.li3': { ko: '직접 운영 기반 부가가치', en: 'Value from Hands-on Operation' },
+          'about.box3.h2':  { ko: 'AI 역량 · 기술 자산', en: 'AI Capabilities · Tech Assets' },
+          'about.box3.p':   { ko: '자체 모델 보유를 넘어, SI·서비스에 바로 결합하는 AI 역량을 갖췄습니다. 통합·운영·보안이 차별점입니다.',
+                              en: 'Beyond owning our own models, we have AI capabilities that plug directly into SI and services. Integration, operation, and security set us apart.' },
+          'about.box3.li1': { ko: '음성(STT·TTS) · 보안(Defence)', en: 'Voice (STT·TTS) · Security (Defence)' },
+          'about.box3.li2': { ko: '생성형 챗봇·콜봇(RAG/LLM)', en: 'Generative Chatbot·Callbot (RAG/LLM)' },
+          'about.box3.li3': { ko: 'AICC · 업무 자동화', en: 'AICC · Workflow Automation' },
+
+          'story.h2':       { ko: '주요 구축사례', en: 'Selected Projects' },
+          'story.1.h3':     { ko: '뮤직 플랫폼 구축 및 운영', en: 'Music Platform Build & Operation' },
+          'story.1.p':      { ko: '음악 서비스 플랫폼<br>(구축 및 운영)', en: 'Music service platform<br>(build & operation)' },
+          'story.2.h3':     { ko: '상담지원시스템 개발·운영', en: 'Agent-assist System Build & Ops' },
+          'story.2.p':      { ko: '글로벌 BPO<br>(개발 및 운영 참여)', en: 'Global BPO<br>(development & operation)' },
+          'story.3.h3':     { ko: 'AutoQA 개발', en: 'AutoQA Development' },
+          'story.3.p':      { ko: '카드사<br>(상담 후처리 자동평가)', en: 'Card company<br>(automated post-call QA)' },
+          'story.4.h3':     { ko: '민원신고 챗봇 개발', en: 'Civil-complaint Chatbot' },
+          'story.4.p':      { ko: '공공기관<br>(개발 참여)', en: 'Public institution<br>(development)' },
+          'story.5.h3':     { ko: '위치기반 서비스 개발', en: 'Location-based Service' },
+          'story.5.p':      { ko: '세스코<br>(개발 참여)', en: 'CESCO<br>(development)' },
+
+          'axdev.p':        { ko: '포에시아가 직접 만들고 운영하는 <b>SI·SW 개발 생태계 허브</b>입니다.<br>사업·과제·인력·프로젝트·커뮤니티를 한곳에서 — 개발자와 기업을 잇습니다.',
+                              en: 'A <b>developer ecosystem hub for SI·SW</b>, built and operated by Poesia.<br>Bids, projects, talent, and community in one place — connecting developers and companies.' },
+          'axdev.feat1':    { ko: '사업·과제 인텔리전스', en: 'Bid & Project Intelligence' },
+          'axdev.feat2':    { ko: '프로젝트 매칭', en: 'Project Matching' },
+          'axdev.feat3':    { ko: '인재풀', en: 'Talent Pool' },
+          'axdev.feat4':    { ko: '개발자 커뮤니티', en: 'Developer Community' },
+          'axdev.cta':      { ko: 'AXDevHub 바로가기 ↗', en: 'Go to AXDevHub ↗' },
+
+          'sol.title':      { ko: 'AI 역량 &amp; 기술 자산', en: 'AI Capabilities &amp; Tech Assets' },
+          'sol.lead':       { ko: 'SI·서비스에 바로 결합하는, 검증된 AI 기술 자산입니다.',
+                              en: 'Proven AI technology assets that integrate directly into SI and services.' },
+          'sol.stt.h3':     { ko: '음성인식 (STT)', en: 'Speech Recognition (STT)' },
+          'sol.stt.p':      { ko: '42,500시간 학습 기반 실시간 음성인식. 인식률 95% 이상, 도메인 맞춤학습',
+                              en: 'Real-time speech recognition trained on 42,500 hours. 95%+ accuracy with domain tuning.' },
+          'sol.tts.h3':     { ko: '음성합성 (TTS)', en: 'Speech Synthesis (TTS)' },
+          'sol.tts.p':      { ko: '사람처럼 자연스러운 합성음(MOS 4.3+). 맞춤형 음성학습 지원',
+                              en: 'Human-like synthetic voice (MOS 4.3+). Custom voice training supported.' },
+          'sol.def.h3':     { ko: '민감정보·보안 (Defence)', en: 'Sensitive-data Security (Defence)' },
+          'sol.def.p':      { ko: '민감정보 탐지·암복호화·마스킹. 운영 단계의 데이터 보안 차별화 역량',
+                              en: 'Sensitive-data detection, encryption, and masking. Differentiated data security in operations.' },
+          'sol.chat.h3':    { ko: '생성형 챗봇 (RAG/LLM)', en: 'Generative Chatbot (RAG/LLM)' },
+          'sol.chat.p':     { ko: '시나리오 + Modular RAG 하이브리드. 내부정보 기반 정확한 생성형 답변',
+                              en: 'Scenario + Modular RAG hybrid. Accurate generative answers grounded in internal data.' },
+          'sol.call.h3':    { ko: '콜봇 (Callbot)', en: 'Callbot' },
+          'sol.call.p':     { ko: 'VoiceGateway·STT·TTS·RAG 기반 24시간 무중단 전문상담 콜봇',
+                              en: '24/7 expert-consultation callbot on VoiceGateway·STT·TTS·RAG.' },
+          'sol.aicc.h3':    { ko: 'AICC 통합', en: 'AICC Integration' },
+          'sol.aicc.p':     { ko: '상담지원·감정분석·자동평가(AutoQA)를 통합한 채널 AI 콜센터',
+                              en: 'An AI contact center integrating agent assist, sentiment analysis, and AutoQA.' },
+          'sol.more.h3':    { ko: '그 외 보유 기술', en: 'Other Technologies' },
+          'sol.chip1':      { ko: '<b>신분증인식</b> 4종 95%+', en: '<b>ID Recognition</b> 4 types 95%+' },
+          'sol.chip2':      { ko: '<b>녹취·화자분리</b>', en: '<b>Recording · Speaker Diarization</b>' },
+          'sol.chip3':      { ko: '<b>업무용 메신저</b>', en: '<b>Enterprise Messenger</b>' },
+          'sol.chip4':      { ko: '<b>업무 자동화(RPA·HyperAutomation)</b>', en: '<b>Workflow Automation (RPA·HyperAutomation)</b>' },
+          'sol.chip5':      { ko: '<b>업무비서(AI Agent)</b>', en: '<b>AI Assistant (AI Agent)</b>' },
+
+          'trust.1.label':  { ko: '음성인식(STT) 정확도<br>42,500시간 학습', en: 'Speech recognition (STT) accuracy<br>42,500 hours trained' },
+          'trust.2.label':  { ko: '음성합성(TTS)<br>자연성 품질', en: 'Speech synthesis (TTS)<br>naturalness quality' },
+          'trust.3.label':  { ko: '신분증인식 4종<br>자체 OCR', en: 'ID recognition, 4 types<br>in-house OCR' },
+          'trust.4.num':    { ko: '기업부설<br>연구소', en: 'Corporate<br>R&amp;D Center' },
+          'trust.4.label':  { ko: '2024.08 설립<br>자체 R&amp;D 역량', en: 'Est. Aug 2024<br>in-house R&amp;D' },
+
+          'contact.p':      { ko: '포에시아와 함께 가치 있는 비즈니스를 만드세요.', en: 'Build a valuable business together with Poesia.' },
+          'contact.k.addr': { ko: '주소', en: 'Address' },
+          'contact.k.tel':  { ko: '전화 · 팩스', en: 'Phone · Fax' },
+          'contact.address':{ ko: '경기도 남양주시 화도읍 마석중앙로37번길 45, 504호-D152호(별나라프라자)',
+                              en: '45, Maseokjungang-ro 37beon-gil, Hwado-eup, Namyangju-si, Gyeonggi-do, Republic of Korea (Room 504-D152, Byeollara Plaza)' },
+
+          'footer.corp':    { ko: '주식회사 포에시아 · 대표 조연우 · 사업자등록번호 475-87-02542<br>경기도 남양주시 화도읍 마석중앙로37번길 45, 504호-D152호(별나라프라자)',
+                              en: 'Poesia Corp. · CEO Cho Yeon-woo · Business Reg. No. 475-87-02542<br>45, Maseokjungang-ro 37beon-gil, Hwado-eup, Namyangju-si, Gyeonggi-do, Republic of Korea' }
+        };
+
+        var DOC_TITLE = { ko: '포에시아 | SI·서비스·AI 전문기업', en: 'Poesia | SI · Service · AI Company' };
+
+        function applyLang(lang) {
+          if (lang !== 'en') lang = 'ko';
+          document.querySelectorAll('[data-i18n]').forEach(function (el) {
+            var entry = I18N[el.getAttribute('data-i18n')];
+            if (entry && entry[lang] != null) el.innerHTML = entry[lang];
+          });
+          document.documentElement.setAttribute('lang', lang);
+          document.title = DOC_TITLE[lang];
+          var btn = document.getElementById('langToggle');
+          if (btn) btn.textContent = (lang === 'ko') ? 'EN' : '한국어';
+          try { localStorage.setItem('poesia_lang', lang); } catch (e) {}
+        }
+
+        var saved = 'ko';
+        try { saved = localStorage.getItem('poesia_lang') || 'ko'; } catch (e) {}
+        applyLang(saved);
+
+        var langBtn = document.getElementById('langToggle');
+        if (langBtn) {
+          langBtn.addEventListener('click', function () {
+            var cur = document.documentElement.getAttribute('lang') === 'en' ? 'en' : 'ko';
+            applyLang(cur === 'ko' ? 'en' : 'ko');
+          });
+        }
+
+        // ── AXDEVHUB 링크 환경 자동 인식 ──────────────────
+        // localhost↔localhost:3000 · t.smilewithpoesia↔t.axdevhub · 운영↔axdevhub.com
         var h = location.hostname;
         var url =
           (h === 'localhost' || h === '127.0.0.1') ? 'http://localhost:3000'
@@ -281,7 +420,7 @@
           : 'https://axdevhub.com';
         document.querySelectorAll('a[data-axdev]').forEach(function (a) { a.href = url; });
 
-        // 모바일 햄버거 토글
+        // ── 모바일 햄버거 토글 ───────────────────────────
         var hdr = document.querySelector('header');
         var btn = document.querySelector('.nav-toggle');
         if (hdr && btn) {

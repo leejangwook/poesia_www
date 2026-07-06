@@ -320,28 +320,70 @@ header .btn-company {
     margin-bottom: 40px;
 }
 
-.contact-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* 여러 줄에 걸쳐 나올 수 있도록 설정 */
-    margin-bottom: 20px;
-}
-
-.contact-list a {
+/* 대표 이메일 — 브랜드 CTA 필 버튼 */
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #ff004d 0%, #9966CC 100%);
     color: #fff;
-    background: #333;
-    padding: 10px 20px;
-    margin: 10px; /* 세로 및 가로 간격 설정 */
-    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 40px;
     text-decoration: none;
-    flex: 1 1 calc(33.333% - 20px); /* 한 줄에 세 개씩 나올 수 있도록 설정 */
-    box-sizing: border-box;
+    box-shadow: 0 6px 18px rgba(255, 0, 77, 0.28);
+    transition: transform .18s ease, box-shadow .18s ease;
+    margin-bottom: 28px;
 }
 
-.address,
-.contact-info {
-    font-size: 14px;
-    color: #666;
+.contact-email:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(153, 102, 204, 0.34);
+}
+
+.contact-email .ic { font-size: 18px; }
+
+/* 주소·연락처 정보 카드 */
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    flex: 0 1 380px;
+    max-width: 480px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 18px 22px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card .ic {
+    font-size: 20px;
+    line-height: 1.4;
+    flex-shrink: 0;
+}
+
+.contact-card .k {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    color: #ff004d;
+    margin-bottom: 5px;
+}
+
+.contact-card .v {
+    font-size: 14.5px;
+    color: #555;
+    line-height: 1.6;
 }
 
 footer {
@@ -361,6 +403,28 @@ header .logo { text-indent: -9999px; overflow: hidden; }
     transition: background .15s, color .15s;
 }
 .nav-axdev:hover { background: #ff004d; color: #fff !important; }
+
+/* 언어 토글(한/영) + 우측 액션 그룹 */
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.lang-toggle {
+    background: #fff;
+    color: #333;
+    border: 1.5px solid #ddd;
+    border-radius: 18px;
+    padding: 5px 14px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .15s, color .15s, border-color .15s;
+}
+.lang-toggle:hover { border-color: #9966CC; color: #9966CC; }
+
+/* 데스크톱: 시각 순서를 로고 | 메뉴 | 언어토글 로 배치
+   (DOM은 모바일 드롭다운을 위해 header-actions가 nav보다 앞) */
+@media (min-width: 769px) {
+    header nav { order: 2; }
+    .header-actions { order: 3; margin-left: 12px; }
+}
 
 /* 햄버거 버튼 — 데스크톱 숨김, 모바일(≤768)에서 표시 */
 .nav-toggle {
@@ -515,14 +579,9 @@ footer .footer-corp { font-size: 13px; color: #bbb; line-height: 1.7; margin: 6p
         margin-bottom: 10px;
     }
 
-    .contact-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-list a {
-        width: 100%;
-        margin: 5px 0;
+    .contact-card {
+        flex: 1 1 100%;
+        max-width: none;
     }
 }
 
@@ -569,14 +628,11 @@ footer .footer-corp { font-size: 13px; color: #bbb; line-height: 1.7; margin: 6p
     /* 구축사례 카드: 폰에서도 충분한 여백 유지(좌측 강조선·번호 가독성) */
     .story-item { padding: 18px 18px 18px 20px; }
 
-    .contact-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-list a {
-        width: 100%; /* 전체 너비를 차지하도록 설정 */
-        margin: 5px 0; /* 세로 간격 조정 */
+    .contact-email {
+        font-size: 15px;
+        padding: 13px 22px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 }
 
